@@ -367,6 +367,8 @@ address {
   gap: 24px;
 }
 .footer-input {
+  padding-left: 10px;
+  color: var(--graylight-color);
   min-width: 264px;
   height: 40px;
   background-color: transparent;
@@ -498,7 +500,7 @@ address {
   width: 408px;
   min-height: 576px;
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 72px;
   background-color: var(--fonokolor-color);
   transition: transform 200ms linear;
 }
@@ -506,13 +508,15 @@ address {
   transform: translate(-50%, -50%) scaleY(0);
 }
 .modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: var(--grayday-color);
   display: flex;
-  margin-left: auto;
   justify-content: center;
   align-items: center;
   transition: background-color var(--transition-efect);
@@ -532,10 +536,9 @@ address {
   pointer-events: none;
 }
 .form-input {
-  display: block;
   border: 1px solid var(--greay-color);
   border-radius: 4px;
-  width: 100%;
+  width: 360px;
   height: 40px;
   padding-left: 38px;
   outline: transparent;
@@ -549,22 +552,22 @@ address {
 }
 .form-input::placeholder {
   margin-left: 38px;
-  color: var(--greay-color);
+  fill: var(--greay-color);
 }
 .title-form {
   text-align: center;
   letter-spacing: 0.02em;
-  margin-top: 38px;
-  margin-bottom: 2px;
+  margin-bottom: 16px;
 }
 .text-form {
   color: var(--greay-color);
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 16px;
+  display: block;
 }
 .modal-div {
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 .icon-div {
   position: relative;
@@ -576,6 +579,7 @@ address {
   transform: translateY(-50%);
 }
 .modal-area {
+  display: block;
   border: 1px solid var(--greay-color);
   border-radius: 4px;
   width: 100%;
@@ -587,12 +591,16 @@ address {
 .modal-area::placeholder {
   color: var(--greay-color);
 }
+.div-area {
+  margin-bottom: 16px;
+}
 .text-check {
   margin-top: 9px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   color: #757575;
+  letter-spacing: 0.04em;
   display: flex;
 }
 .text-check span {
@@ -611,7 +619,9 @@ address {
   background-color: var(--hovercolor-color);
   border: none;
 }
-
+.link-privacy {
+  color: var(--btncolor-color);
+}
 .form-btn {
   text-align: center;
   min-width: 169px;
